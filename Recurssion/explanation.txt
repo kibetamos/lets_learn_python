@@ -1,0 +1,2 @@
+Recursion is the process of defining something in terms of itself
+A process in which a function calls itself directly or indirectly
