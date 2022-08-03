@@ -1,0 +1,5 @@
+An abstract class is a class that cannot be instantiated.
+However, you can create classes that inherit from an abstract class.
+an abstract method is an method without an implementation. 
+An abstract class may or may not include abstract methods.
+
