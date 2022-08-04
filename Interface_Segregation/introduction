@@ -1,0 +1,14 @@
+S – Single responsibility Principle
+O – Open-closed Principle
+L – Liskov Substitution Principle
+I – Interface Segregation Principle
+D – Dependency Inversion Principle
+
+An interface is a description of behaviors that an object can do.
+In object-oriented programming, an interface is a set of methods an object must-have
+The purpose of interfaces is to allow clients to request the correct methods of an object via its interface.
+
+Python uses abstract classes as interfaces because it follows the so-called duck typing principle.
+The methods of a class determine what its objects will be, not the type of the class.
+
+
