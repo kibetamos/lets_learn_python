@@ -4,6 +4,9 @@
 # from tempfile import tempdir
 
 
+from logging import exception
+
+
 class Stack:
     def __init__ (self):
         self.stackList = []
@@ -40,7 +43,30 @@ class Stack:
         else:
             return False
 
+#Finally lets check the topmost element of a stack
+    def top(self):
+        try:
+            if self.stackSize==0:
+                raise Exception("Stack empty")
+            return self.stackList[-1]
+        except exception as e:
+            print(str(e))
 
+
+#Execution
+s=Stack()
+#push element
+s.push(1)
+#push element
+s.push(2)
+#push element
+s.push(3)
+print("popped element is:")
+print(s.pop())
+#push an element
+s.push(4)
+print("topmost element is:")
+print(s.top())
 
 
 
