@@ -1,0 +1,15 @@
+"""
+python strings are a sequence of characters
+ways to create strings:
+single quotes- ''
+Double quotes - ""
+Triple quotes for multiline strings-'''b''' or """"""
+string method - str(5)==='5' iS True
+concatenation- Joining two strings
+
+"""
+'''
+/n - new line
+/t - tab
+/s - space
+'''
