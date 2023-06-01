@@ -22,6 +22,8 @@ class Employee:
     @property
     def fullname(self):
         return f"{self.firstname}{self.lastname}"
+      
+      
     @abstractmethod
     def get_salary(self):
         pass
@@ -38,26 +40,30 @@ class Full_time_employee(Employee):
 
         #part time employees
 
+        
+# part_time_employee inherits from the Employee class
 class part_time_employee(Employee):
-    def __init__(self,firstname,lastname,worked_time, rate):
+    def __init__(self, firstname, lastname, worked_time, rate):
         super().__init__(firstname, lastname)
-
-        self.worket_time = worked_time
+        self.worked_time = worked_time
         self.rate = rate
-
+    
     def get_salary(self):
-        return self.worket_time*self.rate
-
-#payroll class
+        return self.worked_time * self.rate
+      
+      
+      
+# payroll class manages the list of employees and their salaries
 class payroll:
     def __init__(self):
         self.employee_list = []
         
-    def add(self,employee):
+    def add(self, employee):
         self.employee_list.append(employee)
-
+    
     def print(self):
         for e in self.employee_list:
             print(f"{e.firstname} \t ${e.get_salary()}")
+
 
 
