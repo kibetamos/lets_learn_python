@@ -14,3 +14,7 @@ if match:
 
 else:
     print('Not found')
+    
+    
+#     Regular expressions provide a powerful way to search, match, and manipulate text patterns.
+#     The code you provided demonstrates a simple example of using regular expressions to find an email-like pattern within a string.
