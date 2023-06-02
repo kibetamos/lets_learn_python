@@ -4,7 +4,8 @@ class Person:
 
     def greet(self):
         return f"Hi, it's {self.name}"
+
 class Employee(Person):
     def __init__(self, name, job_title):
-        self.name = name
+        super().__init__(name)
         self.job_title = job_title
