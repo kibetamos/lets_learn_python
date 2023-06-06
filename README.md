@@ -30,12 +30,30 @@ Python Classes provide a powerful mechanism for organizing and modeling complex 
 
 
 
-# Functionality - behaviours of an object<br>
-To model behaviours  python uses functions<br>
-A function associated with an object becomes a method<br>
-an object is a container that contains the state and methods.'<br>
-A class has to be designed before creating an object<br>
-Objects of a class are called instances of a class<br><br><br>
+## Functionality - Behaviors of an Object
+
+To model behaviors, Python uses functions.
+
+A function associated with an object becomes a method.
+
+An object is a container that contains both state and methods.
+
+Before creating an object, a class has to be designed.
+
+Objects of a class are called instances of the class.
+
+### Key Points:
+
+- Functions associated with objects are called methods.
+- Methods define the behaviors or actions that objects can perform.
+- Classes provide a blueprint for creating objects with specific behaviors.
+- Objects are instances of a class and have access to its methods.
+- Encapsulation allows bundling data (state) and methods (functionality) within an object.
+- Methods can modify the state of an object.
+- Methods can take arguments and return values.
+
+In Python, the combination of state (data) and functionality (methods) in objects allows for the modeling of complex systems and the implementation of object-oriented programming concepts.
+
 
 #  Example
 class Work:<br><br>
