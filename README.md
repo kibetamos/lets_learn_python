@@ -74,3 +74,22 @@ print(work)<br><br>
 - Elements can be added to a list using `append()`, `insert()`, or list concatenation (`+` operator).
 - Elements can be updated by accessing them using their index and assigning a new value.
 - Elements can be removed using `remove()` to delete a specific element or `del` statement to remove an element at a specific index.
+
+
+
+
+## Summary of Inheritance in Python
+
+Inheritance is a fundamental concept in object-oriented programming that allows classes to inherit attributes and methods from other classes. Some key points about inheritance in Python include:
+
+- Classes can be defined as subclasses of other classes using the syntax `class SubClass(SuperClass):`.
+- Subclasses inherit all attributes and methods from the superclass, promoting code reuse and enabling specialization and extension.
+- The `super()` function is used to access the superclass and invoke its methods or access its attributes.
+- Subclasses can override inherited methods to provide custom implementations.
+- Multiple inheritance is supported, allowing a class to inherit from multiple superclasses.
+- Inheritance enables polymorphism, where objects of a subclass can be treated as objects of the superclass.
+- Inheritance is a powerful mechanism for creating class hierarchies and organizing code in a modular and reusable manner.
+
+By leveraging inheritance, you can create well-structured and flexible Python programs that promote code reuse and extensibility.
+
+
