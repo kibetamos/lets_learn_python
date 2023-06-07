@@ -63,3 +63,14 @@ work = Work()<br>
 #this prints the name and the memory<br>
 <br>
 print(work)<br><br>
+
+
+
+## Python Lists
+
+- Lists are ordered collections of elements enclosed in square brackets `[]`.
+- Lists can contain elements of different data types.
+- Lists are mutable, meaning they can be modified after creation.
+- Elements can be added to a list using `append()`, `insert()`, or list concatenation (`+` operator).
+- Elements can be updated by accessing them using their index and assigning a new value.
+- Elements can be removed using `remove()` to delete a specific element or `del` statement to remove an element at a specific index.
