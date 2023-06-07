@@ -12,7 +12,7 @@ class Employee(Person):
         self.job_title = job_title
 
 # Create an instance of the Employee class
-employee = Employee("John Doe", "Software Engineer")
+employee = Employee("The Ark", "Software Engineer")
 print(employee.name)  # Output: John Doe
 print(employee.job_title)  # Output: Software Engineer
 print(employee.greet())  # Output: Hi, it's John Doe
