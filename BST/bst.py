@@ -2,63 +2,56 @@ from operator import truediv
 
 
 class BinaryTreeSearch:
-    def __init__ (self,data):
+    def __init__(self, data):
         self.data = data
         self.leftChild = None
         self.rightChild = None
 
-    def insert(root,newvalue):
+    def insert(self, root, newvalue):
         # if binary search tree is empty, create a new node and declare it as root
         if root is None:
             root = BinaryTreeSearch(newvalue)
             return root
 
-        if newvalue<root.data:
-            root.leftchild = insert(root.leftChild,newvalue)
+        if newvalue < root.data:
+            root.leftChild = self.insert(root.leftChild, newvalue)
         else:
-
-            root.rightchild = insert(root.rightchild,newvalue)
+            root.rightChild = self.insert(root.rightChild, newvalue)
         return root
-#we can now search the above tree
-    def search(root,value):
+
+    # we can now search the above tree
+    def search(self, root, value):
         if root is None:
             return False
         elif root.data == value:
             return True
-
-        elif root.data> value:
-            return search(root.leftChild, value)
+        elif root.data > value:
+            return self.search(root.leftChild, value)
         else:
-            return search(root.rightChild,value)
+            return self.search(root.rightChild, value)
 
-#Problem - Get the height of the 
-#The height of a binary search tree is the number 
-# of edges between the tree's root and its furthest leaf
-    def getHeight(self,root):
-        #Write your code here
-        return -1 if root is None else 1 + max(self.getHeight(root.left),
-        self.getHeight(root.right))
+    # Problem - Get the height of the binary search tree
+    # The height of a binary search tree is the number
+    # of edges between the tree's root and its furthest leaf
+    def getHeight(self, root):
+        return -1 if root is None else 1 + max(self.getHeight(root.leftChild), self.getHeight(root.rightChild))
 
-    #Find the smallest element
-
-    def findSmallestElement(root):
-        #Lets check if the binary tree is empty
-        if root == None:
+    # Find the smallest element
+    def findSmallestElement(self, root):
+        # Let's check if the binary tree is empty
+        if root is None:
             return False
-            #Check if the current node is the left most
-        elif root.leftChild==None:
+        # Check if the current node is the leftmost
+        elif root.leftChild is None:
             return root.data
-        #Lets check the right subtree of current node
+        # Let's check the left subtree of the current node
         else:
-            return findSmallestElement(root.leftChild)
-            
-    def findLargestElement(root):
-        if root ==None:
+            return self.findSmallestElement(root.leftChild)
+
+    def findLargestElement(self, root):
+        if root is None:
             return False
-        elif root.rightChild == None:
+        elif root.rightChild is None:
             return root.data
         else:
-            return findLargestElement(root.rightChild)
-
-            
-        
+            return self.findLargestElement(root.rightChild)
