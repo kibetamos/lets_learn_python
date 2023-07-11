@@ -34,3 +34,10 @@ class AbstractClassExample(ABC):
 
 In the code above, AbstractClassExample is an abstract class with two abstract methods, method1 and method2.
 Subclasses of AbstractClassExample must provide their own implementations for these methods.
+
+
+### Implementing Subclasses
+To create a concrete class that extends an abstract class, follow these steps:
+
+    Define a new class that inherits from the abstract class.
+    Implement all the abstract methods defined in the abstract class.
