@@ -41,3 +41,21 @@ To create a concrete class that extends an abstract class, follow these steps:
 
 1. Define a new class that inherits from the abstract class.
 2. Implement all the abstract methods defined in the abstract class.
+
+
+Here's an example:
+
+```
+class ConcreteClass(AbstractClassExample):
+    def method1(self):
+        # Implementation for method1
+        pass
+
+    def method2(self):
+        # Implementation for method2
+        pass
+
+```
+
+
+
