@@ -39,5 +39,5 @@ Subclasses of AbstractClassExample must provide their own implementations for th
 ### Implementing Subclasses
 To create a concrete class that extends an abstract class, follow these steps:
 
-    Define a new class that inherits from the abstract class.
-    Implement all the abstract methods defined in the abstract class.
+1. Define a new class that inherits from the abstract class.
+2. Implement all the abstract methods defined in the abstract class.
