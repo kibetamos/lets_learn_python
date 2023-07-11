@@ -28,3 +28,6 @@ class AbstractClassExample(ABC):
     @abstractmethod
     def method2(self):
         pass
+
+In the code above, AbstractClassExample is an abstract class with two abstract methods, method1 and method2.
+Subclasses of AbstractClassExample must provide their own implementations for these methods.
