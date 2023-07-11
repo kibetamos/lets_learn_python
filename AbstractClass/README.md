@@ -28,7 +28,7 @@ class AbstractClassExample(ABC):
     @abstractmethod
     def method2(self):
         pass
-
+```
 
 
 
